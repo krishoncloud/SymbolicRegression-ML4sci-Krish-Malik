@@ -1,8 +1,8 @@
 # SymbolicRegression-ML4Sci-Krish-Malik
 
-## 📌 Tasks & Results
+## Tasks & Results
 
-### ✅ Common Task 1: Preprocessing & Tokenization
+###  Common Task 1: Preprocessing & Tokenization
 - **Objective:** Prepare and tokenize equations to make them suitable for symbolic regression using machine learning models.
 - **What I Did:**
   - **Dataset Cleaning & Structuring:** Converted raw symbolic expressions into a structured dataset.
@@ -14,7 +14,7 @@
 
 ---
 
-### ✅ Common Task 2: Basic Transformer Model
+### Common Task 2: Basic Transformer Model
 - **Objective:** Implement and train a baseline Transformer model for symbolic regression to establish a performance benchmark.
 - **What I Did:**
   - Implemented a Transformer Encoder for sequence-to-sequence learning.
@@ -29,7 +29,7 @@
 
 ---
 
-### ✅ Task 3.3: Mixture of Experts (MoE) Transformer
+### Task 3.3: Mixture of Experts (MoE) Transformer
 - **Objective:** Enhance transformer performance by integrating a Mixture of Experts (MoE) model for better efficiency and specialization.
 - **What I Did:**
   - **Implemented MoE:**
@@ -50,7 +50,7 @@
 
 ---
 
-### ✅ Task 3.5: Genetic Algorithm (GA) for Hyperparameter Tuning
+### Task 3.5: Genetic Algorithm (GA) for Hyperparameter Tuning
 - **Objective:** Use Genetic Algorithms (GA) to optimize hyperparameters for better model performance.
 - **What I Did:**
   - **Implemented a Genetic Algorithm Optimization Pipeline:**
@@ -63,7 +63,7 @@
 - **Key Performance Improvements:**
   - Hyperparameter tuning improved transformer efficiency by optimizing learning rate and attention mechanisms.
   - Significant accuracy boost compared to baseline models.
-- **Results:** **91.5% Accuracy 🚀** (Improved from 84%)
+- **Results:** **91.5% Accuracy ** (Improved from 84%)
 - **Key Takeaways:**
   - GA provided an automated way to fine-tune hyperparameters, leading to major performance gains.
   - Addressed architecture constraints dynamically, ensuring valid configurations.
@@ -71,7 +71,7 @@
 
 ---
 
-## 📊 Model Performance Summary
+## Model Performance Summary
 | Model | Approach | Accuracy (%) |
 |---|---|---|
 | **Basic Transformer** | Standard Transformer (Baseline) | **80%** |
