@@ -1,0 +1,101 @@
+original_equation,processed_equation,tokens
+exp(-theta**2/2)/sqrt(2*pi),exp(-theta^2/2)/sqrt(2*pi),FUNC_EXP | VAR_( | OP_- | VAR_theta | OP_^ | <NUM> | OP_/ | <NUM> | VAR_) | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_* | CONST_PI | VAR_)
+exp(-(theta/sigma)**2/2)/(sqrt(2*pi)*sigma),exp(-(theta/sigma)^2/2)/(sqrt(2*pi)*sigma),FUNC_EXP | VAR_( | OP_- | VAR_( | VAR_theta | OP_/ | VAR_sigma | VAR_) | OP_^ | <NUM> | OP_/ | <NUM> | VAR_) | OP_/ | VAR_( | FUNC_SQRT | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | OP_* | VAR_sigma | VAR_)
+exp(-((theta-theta1)/sigma)**2/2)/(sqrt(2*pi)*sigma),exp(-((theta-theta1)/sigma)^2/2)/(sqrt(2*pi)*sigma),FUNC_EXP | VAR_( | OP_- | VAR_( | VAR_( | VAR_theta | OP_- | VAR_theta1 | VAR_) | OP_/ | VAR_sigma | VAR_) | OP_^ | <NUM> | OP_/ | <NUM> | VAR_) | OP_/ | VAR_( | FUNC_SQRT | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | OP_* | VAR_sigma | VAR_)
+sqrt((x2-x1)**2+(y2-y1)**2),sqrt((x2-x1)^2+(y2-y1)^2),FUNC_SQRT | VAR_( | VAR_( | VAR_x2 | OP_- | VAR_x1 | VAR_) | OP_^ | <NUM> | OP_+ | VAR_( | VAR_y2 | OP_- | VAR_y1 | VAR_) | OP_^ | <NUM> | VAR_)
+G*m1*m2/((x2-x1)**2+(y2-y1)**2+(z2-z1)**2),G*m1*m2/((x2-x1)^2+(y2-y1)^2+(z2-z1)^2),CONST_G | OP_* | VAR_m1 | OP_* | VAR_m2 | OP_/ | VAR_( | VAR_( | VAR_x2 | OP_- | VAR_x1 | VAR_) | OP_^ | <NUM> | OP_+ | VAR_( | VAR_y2 | OP_- | VAR_y1 | VAR_) | OP_^ | <NUM> | OP_+ | VAR_( | VAR_z2 | OP_- | VAR_z1 | VAR_) | OP_^ | <NUM> | VAR_)
+m_0/sqrt(1-v**2/c**2),m_0/sqrt(1-v^2/c^2),VAR_m_0 | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_v | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+x1*y1+x2*y2+x3*y3,x1*y1+x2*y2+x3*y3,VAR_x1 | OP_* | VAR_y1 | OP_+ | VAR_x2 | OP_* | VAR_y2 | OP_+ | VAR_x3 | OP_* | VAR_y3
+mu*Nn,mu*Nn,VAR_mu | OP_* | VAR_Nn
+q1*q2*r/(4*pi*epsilon*r**3),q1*q2*r/(4*pi*epsilon*r^3),VAR_q1 | OP_* | VAR_q2 | OP_* | VAR_r | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | VAR_r | OP_^ | <NUM> | VAR_)
+q1*r/(4*pi*epsilon*r**3),q1*r/(4*pi*epsilon*r^3),VAR_q1 | OP_* | VAR_r | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | VAR_r | OP_^ | <NUM> | VAR_)
+q2*Ef,q2*Ef,VAR_q2 | OP_* | VAR_Ef
+q*(Ef+B*v*sin(theta)),q*(Ef+B*v*sin(theta)),CONST_Q | OP_* | VAR_( | VAR_Ef | OP_+ | VAR_B | OP_* | VAR_v | OP_* | FUNC_SIN | VAR_( | VAR_theta | VAR_) | VAR_)
+1/2*m*(v**2+u**2+w**2),1/2*m*(v^2+u^2+w^2),<NUM> | OP_/ | <NUM> | OP_* | CONST_M | OP_* | VAR_( | VAR_v | OP_^ | <NUM> | OP_+ | VAR_u | OP_^ | <NUM> | OP_+ | VAR_w | OP_^ | <NUM> | VAR_)
+G*m1*m2*(1/r2-1/r1),G*m1*m2*(1/r2-1/r1),CONST_G | OP_* | VAR_m1 | OP_* | VAR_m2 | OP_* | VAR_( | <NUM> | OP_/ | VAR_r2 | OP_- | <NUM> | OP_/ | VAR_r1 | VAR_)
+m*g*z,m*g*z,CONST_M | OP_* | VAR_g | OP_* | VAR_z
+1/2*k_spring*x**2,1/2*k_spring*x^2,<NUM> | OP_/ | <NUM> | OP_* | VAR_k_spring | OP_* | VAR_x | OP_^ | <NUM>
+(x-u*t)/sqrt(1-u**2/c**2),(x-u*t)/sqrt(1-u^2/c^2),VAR_( | VAR_x | OP_- | VAR_u | OP_* | VAR_t | VAR_) | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_u | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+(t-u*x/c**2)/sqrt(1-u**2/c**2),(t-u*x/c^2)/sqrt(1-u^2/c^2),VAR_( | VAR_t | OP_- | VAR_u | OP_* | VAR_x | OP_/ | CONST_C | OP_^ | <NUM> | VAR_) | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_u | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+m_0*v/sqrt(1-v**2/c**2),m_0*v/sqrt(1-v^2/c^2),VAR_m_0 | OP_* | VAR_v | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_v | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+(u+v)/(1+u*v/c**2),(u+v)/(1+u*v/c^2),VAR_( | VAR_u | OP_+ | VAR_v | VAR_) | OP_/ | VAR_( | <NUM> | OP_+ | VAR_u | OP_* | VAR_v | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+(m1*r1+m2*r2)/(m1+m2),(m1*r1+m2*r2)/(m1+m2),VAR_( | VAR_m1 | OP_* | VAR_r1 | OP_+ | VAR_m2 | OP_* | VAR_r2 | VAR_) | OP_/ | VAR_( | VAR_m1 | OP_+ | VAR_m2 | VAR_)
+r*F*sin(theta),r*F*sin(theta),VAR_r | OP_* | VAR_F | OP_* | FUNC_SIN | VAR_( | VAR_theta | VAR_)
+m*r*v*sin(theta),m*r*v*sin(theta),CONST_M | OP_* | VAR_r | OP_* | VAR_v | OP_* | FUNC_SIN | VAR_( | VAR_theta | VAR_)
+1/2*m*(omega**2+omega_0**2)*1/2*x**2,1/2*m*(omega^2+omega_0^2)*1/2*x^2,<NUM> | OP_/ | <NUM> | OP_* | CONST_M | OP_* | VAR_( | VAR_omega | OP_^ | <NUM> | OP_+ | VAR_omega_0 | OP_^ | <NUM> | VAR_) | OP_* | <NUM> | OP_/ | <NUM> | OP_* | VAR_x | OP_^ | <NUM>
+q/C,q/C,CONST_Q | OP_/ | VAR_C
+arcsin(n*sin(theta2)),arcsin(n*sin(theta2)),FUNC_ARCSIN | VAR_( | VAR_n | OP_* | FUNC_SIN | VAR_( | VAR_theta2 | VAR_) | VAR_)
+1/(1/d1+n/d2),1/(1/d1+n/d2),<NUM> | OP_/ | VAR_( | <NUM> | OP_/ | VAR_d1 | OP_+ | VAR_n | OP_/ | VAR_d2 | VAR_)
+omega/c,omega/c,VAR_omega | OP_/ | CONST_C
+sqrt(x1**2+x2**2-2*x1*x2*cos(theta1-theta2)),sqrt(x1^2+x2^2-2*x1*x2*cos(theta1-theta2)),FUNC_SQRT | VAR_( | VAR_x1 | OP_^ | <NUM> | OP_+ | VAR_x2 | OP_^ | <NUM> | OP_- | <NUM> | OP_* | VAR_x1 | OP_* | VAR_x2 | OP_* | FUNC_COS | VAR_( | VAR_theta1 | OP_- | VAR_theta2 | VAR_) | VAR_)
+Int_0*sin(n*theta/2)**2/sin(theta/2)**2,Int_0*sin(n*theta/2)^2/sin(theta/2)^2,VAR_Int_0 | OP_* | FUNC_SIN | VAR_( | VAR_n | OP_* | VAR_theta | OP_/ | <NUM> | VAR_) | OP_^ | <NUM> | OP_/ | FUNC_SIN | VAR_( | VAR_theta | OP_/ | <NUM> | VAR_) | OP_^ | <NUM>
+arcsin(lambd/(n*d)),arcsin(lambd/(n*d)),FUNC_ARCSIN | VAR_( | VAR_lambd | OP_/ | VAR_( | VAR_n | OP_* | VAR_d | VAR_) | VAR_)
+q**2*a**2/(6*pi*epsilon*c**3),q^2*a^2/(6*pi*epsilon*c^3),CONST_Q | OP_^ | <NUM> | OP_* | VAR_a | OP_^ | <NUM> | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | CONST_C | OP_^ | <NUM> | VAR_)
+(1/2*epsilon*c*Ef**2)*(8*pi*r**2/3)*(omega**4/(omega**2-omega_0**2)**2),(1/2*epsilon*c*Ef^2)*(8*pi*r^2/3)*(omega^4/(omega^2-omega_0^2)^2),VAR_( | <NUM> | OP_/ | <NUM> | OP_* | CONST_EPSILON | OP_* | CONST_C | OP_* | VAR_Ef | OP_^ | <NUM> | VAR_) | OP_* | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | VAR_r | OP_^ | <NUM> | OP_/ | <NUM> | VAR_) | OP_* | VAR_( | VAR_omega | OP_^ | <NUM> | OP_/ | VAR_( | VAR_omega | OP_^ | <NUM> | OP_- | VAR_omega_0 | OP_^ | <NUM> | VAR_) | OP_^ | <NUM> | VAR_)
+q*v*B/p,q*v*B/p,CONST_Q | OP_* | VAR_v | OP_* | VAR_B | OP_/ | VAR_p
+omega_0/(1-v/c),omega_0/(1-v/c),VAR_omega_0 | OP_/ | VAR_( | <NUM> | OP_- | VAR_v | OP_/ | CONST_C | VAR_)
+(1+v/c)/sqrt(1-v**2/c**2)*omega_0,(1+v/c)/sqrt(1-v^2/c^2)*omega_0,VAR_( | <NUM> | OP_+ | VAR_v | OP_/ | CONST_C | VAR_) | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_v | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_) | OP_* | VAR_omega_0
+(h/(2*pi))*omega,(h/(2*pi))*omega,VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_* | VAR_omega
+I1+I2+2*sqrt(I1*I2)*cos(delta),I1+I2+2*sqrt(I1*I2)*cos(delta),VAR_I1 | OP_+ | VAR_I2 | OP_+ | <NUM> | OP_* | FUNC_SQRT | VAR_( | VAR_I1 | OP_* | VAR_I2 | VAR_) | OP_* | FUNC_COS | VAR_( | VAR_delta | VAR_)
+4*pi*epsilon*(h/(2*pi))**2/(m*q**2),4*pi*epsilon*(h/(2*pi))^2/(m*q^2),<NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_^ | <NUM> | OP_/ | VAR_( | CONST_M | OP_* | CONST_Q | OP_^ | <NUM> | VAR_)
+3/2*pr*V,3/2*pr*V,<NUM> | OP_/ | <NUM> | OP_* | VAR_pr | OP_* | VAR_V
+1/(gamma-1)*pr*V,1/(gamma-1)*pr*V,<NUM> | OP_/ | VAR_( | VAR_gamma | OP_- | <NUM> | VAR_) | OP_* | VAR_pr | OP_* | VAR_V
+n*kb*T/V,n*kb*T/V,VAR_n | OP_* | VAR_kb | OP_* | CONST_T | OP_/ | VAR_V
+n_0*exp(-m*g*x/(kb*T)),n_0*exp(-m*g*x/(kb*T)),VAR_n_0 | OP_* | FUNC_EXP | VAR_( | OP_- | CONST_M | OP_* | VAR_g | OP_* | VAR_x | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_)
+h/(2*pi)*omega**3/(pi**2*c**2*(exp((h/(2*pi))*omega/(kb*T))-1)),h/(2*pi)*omega^3/(pi^2*c^2*(exp((h/(2*pi))*omega/(kb*T))-1)),CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | OP_* | VAR_omega | OP_^ | <NUM> | OP_/ | VAR_( | CONST_PI | OP_^ | <NUM> | OP_* | CONST_C | OP_^ | <NUM> | OP_* | VAR_( | FUNC_EXP | VAR_( | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_* | VAR_omega | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_) | OP_- | <NUM> | VAR_) | VAR_)
+mu_drift*q*Volt/d,mu_drift*q*Volt/d,VAR_mu_drift | OP_* | CONST_Q | OP_* | VAR_Volt | OP_/ | VAR_d
+mob*kb*T,mob*kb*T,VAR_mob | OP_* | VAR_kb | OP_* | CONST_T
+1/(gamma-1)*kb*v/A,1/(gamma-1)*kb*v/A,<NUM> | OP_/ | VAR_( | VAR_gamma | OP_- | <NUM> | VAR_) | OP_* | VAR_kb | OP_* | VAR_v | OP_/ | VAR_A
+n*kb*T*ln(V2/V1),n*kb*T*ln(V2/V1),VAR_n | OP_* | VAR_kb | OP_* | CONST_T | OP_* | FUNC_LN | VAR_( | VAR_V2 | OP_/ | VAR_V1 | VAR_)
+sqrt(gamma*pr/rho),sqrt(gamma*pr/rho),FUNC_SQRT | VAR_( | VAR_gamma | OP_* | VAR_pr | OP_/ | VAR_rho | VAR_)
+m*c**2/sqrt(1-v**2/c**2),m*c^2/sqrt(1-v^2/c^2),CONST_M | OP_* | CONST_C | OP_^ | <NUM> | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_v | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+x1*(cos(omega*t)+alpha*cos(omega*t)**2),x1*(cos(omega*t)+alpha*cos(omega*t)^2),VAR_x1 | OP_* | VAR_( | FUNC_COS | VAR_( | VAR_omega | OP_* | VAR_t | VAR_) | OP_+ | VAR_alpha | OP_* | FUNC_COS | VAR_( | VAR_omega | OP_* | VAR_t | VAR_) | OP_^ | <NUM> | VAR_)
+kappa*(T2-T1)*A/d,kappa*(T2-T1)*A/d,VAR_kappa | OP_* | VAR_( | VAR_T2 | OP_- | VAR_T1 | VAR_) | OP_* | VAR_A | OP_/ | VAR_d
+Pwr/(4*pi*r**2),Pwr/(4*pi*r^2),VAR_Pwr | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | VAR_r | OP_^ | <NUM> | VAR_)
+q/(4*pi*epsilon*r),q/(4*pi*epsilon*r),CONST_Q | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | VAR_r | VAR_)
+1/(4*pi*epsilon)*p_d*cos(theta)/r**2,1/(4*pi*epsilon)*p_d*cos(theta)/r^2,<NUM> | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | VAR_) | OP_* | VAR_p_d | OP_* | FUNC_COS | VAR_( | VAR_theta | VAR_) | OP_/ | VAR_r | OP_^ | <NUM>
+p_d/(4*pi*epsilon)*3*z/r**5*sqrt(x**2+y**2),p_d/(4*pi*epsilon)*3*z/r^5*sqrt(x^2+y^2),VAR_p_d | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | VAR_) | OP_* | <NUM> | OP_* | VAR_z | OP_/ | VAR_r | OP_^ | <NUM> | OP_* | FUNC_SQRT | VAR_( | VAR_x | OP_^ | <NUM> | OP_+ | VAR_y | OP_^ | <NUM> | VAR_)
+p_d/(4*pi*epsilon)*3*cos(theta)*sin(theta)/r**3,p_d/(4*pi*epsilon)*3*cos(theta)*sin(theta)/r^3,VAR_p_d | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | VAR_) | OP_* | <NUM> | OP_* | FUNC_COS | VAR_( | VAR_theta | VAR_) | OP_* | FUNC_SIN | VAR_( | VAR_theta | VAR_) | OP_/ | VAR_r | OP_^ | <NUM>
+3/5*q**2/(4*pi*epsilon*d),3/5*q^2/(4*pi*epsilon*d),<NUM> | OP_/ | <NUM> | OP_* | CONST_Q | OP_^ | <NUM> | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | VAR_d | VAR_)
+epsilon*Ef**2/2,epsilon*Ef^2/2,CONST_EPSILON | OP_* | VAR_Ef | OP_^ | <NUM> | OP_/ | <NUM>
+sigma_den/epsilon*1/(1+chi),sigma_den/epsilon*1/(1+chi),VAR_sigma_den | OP_/ | CONST_EPSILON | OP_* | <NUM> | OP_/ | VAR_( | <NUM> | OP_+ | VAR_chi | VAR_)
+q*Ef/(m*(omega_0**2-omega**2)),q*Ef/(m*(omega_0^2-omega^2)),CONST_Q | OP_* | VAR_Ef | OP_/ | VAR_( | CONST_M | OP_* | VAR_( | VAR_omega_0 | OP_^ | <NUM> | OP_- | VAR_omega | OP_^ | <NUM> | VAR_) | VAR_)
+n_0*(1+p_d*Ef*cos(theta)/(kb*T)),n_0*(1+p_d*Ef*cos(theta)/(kb*T)),VAR_n_0 | OP_* | VAR_( | <NUM> | OP_+ | VAR_p_d | OP_* | VAR_Ef | OP_* | FUNC_COS | VAR_( | VAR_theta | VAR_) | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_)
+n_rho*p_d**2*Ef/(3*kb*T),n_rho*p_d^2*Ef/(3*kb*T),VAR_n_rho | OP_* | VAR_p_d | OP_^ | <NUM> | OP_* | VAR_Ef | OP_/ | VAR_( | <NUM> | OP_* | VAR_kb | OP_* | CONST_T | VAR_)
+n*alpha/(1-(n*alpha/3))*epsilon*Ef,n*alpha/(1-(n*alpha/3))*epsilon*Ef,VAR_n | OP_* | VAR_alpha | OP_/ | VAR_( | <NUM> | OP_- | VAR_( | VAR_n | OP_* | VAR_alpha | OP_/ | <NUM> | VAR_) | VAR_) | OP_* | CONST_EPSILON | OP_* | VAR_Ef
+1+n*alpha/(1-(n*alpha/3)),1+n*alpha/(1-(n*alpha/3)),<NUM> | OP_+ | VAR_n | OP_* | VAR_alpha | OP_/ | VAR_( | <NUM> | OP_- | VAR_( | VAR_n | OP_* | VAR_alpha | OP_/ | <NUM> | VAR_) | VAR_)
+1/(4*pi*epsilon*c**2)*2*I/r,1/(4*pi*epsilon*c^2)*2*I/r,<NUM> | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | CONST_C | OP_^ | <NUM> | VAR_) | OP_* | <NUM> | OP_* | VAR_I | OP_/ | VAR_r
+rho_c_0/sqrt(1-v**2/c**2),rho_c_0/sqrt(1-v^2/c^2),VAR_rho_c_0 | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_v | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+rho_c_0*v/sqrt(1-v**2/c**2),rho_c_0*v/sqrt(1-v^2/c^2),VAR_rho_c_0 | OP_* | VAR_v | OP_/ | FUNC_SQRT | VAR_( | <NUM> | OP_- | VAR_v | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | VAR_)
+-mom*B*cos(theta),-mom*B*cos(theta),OP_- | VAR_mom | OP_* | VAR_B | OP_* | FUNC_COS | VAR_( | VAR_theta | VAR_)
+-p_d*Ef*cos(theta),-p_d*Ef*cos(theta),OP_- | VAR_p_d | OP_* | VAR_Ef | OP_* | FUNC_COS | VAR_( | VAR_theta | VAR_)
+q/(4*pi*epsilon*r*(1-v/c)),q/(4*pi*epsilon*r*(1-v/c)),CONST_Q | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | OP_* | VAR_r | OP_* | VAR_( | <NUM> | OP_- | VAR_v | OP_/ | CONST_C | VAR_) | VAR_)
+sqrt(omega**2/c**2-pi**2/d**2),sqrt(omega^2/c^2-pi^2/d^2),FUNC_SQRT | VAR_( | VAR_omega | OP_^ | <NUM> | OP_/ | CONST_C | OP_^ | <NUM> | OP_- | CONST_PI | OP_^ | <NUM> | OP_/ | VAR_d | OP_^ | <NUM> | VAR_)
+epsilon*c*Ef**2,epsilon*c*Ef^2,CONST_EPSILON | OP_* | CONST_C | OP_* | VAR_Ef | OP_^ | <NUM>
+epsilon*Ef**2,epsilon*Ef^2,CONST_EPSILON | OP_* | VAR_Ef | OP_^ | <NUM>
+q*v/(2*pi*r),q*v/(2*pi*r),CONST_Q | OP_* | VAR_v | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | VAR_r | VAR_)
+q*v*r/2,q*v*r/2,CONST_Q | OP_* | VAR_v | OP_* | VAR_r | OP_/ | <NUM>
+g_*q*B/(2*m),g_*q*B/(2*m),VAR_g_ | OP_* | CONST_Q | OP_* | VAR_B | OP_/ | VAR_( | <NUM> | OP_* | CONST_M | VAR_)
+q*h/(4*pi*m),q*h/(4*pi*m),CONST_Q | OP_* | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_M | VAR_)
+g_*mom*B*Jz/(h/(2*pi)),g_*mom*B*Jz/(h/(2*pi)),VAR_g_ | OP_* | VAR_mom | OP_* | VAR_B | OP_* | VAR_Jz | OP_/ | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_)
+n_0/(exp(mom*B/(kb*T))+exp(-mom*B/(kb*T))),n_0/(exp(mom*B/(kb*T))+exp(-mom*B/(kb*T))),VAR_n_0 | OP_/ | VAR_( | FUNC_EXP | VAR_( | VAR_mom | OP_* | VAR_B | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_) | OP_+ | FUNC_EXP | VAR_( | OP_- | VAR_mom | OP_* | VAR_B | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_) | VAR_)
+n_rho*mom*tanh(mom*B/(kb*T)),n_rho*mom*tanh(mom*B/(kb*T)),VAR_n_rho | OP_* | VAR_mom | OP_* | VAR_tanh | VAR_( | VAR_mom | OP_* | VAR_B | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_)
+mom*H/(kb*T)+(mom*alpha)/(epsilon*c**2*kb*T)*M,mom*H/(kb*T)+(mom*alpha)/(epsilon*c^2*kb*T)*M,VAR_mom | OP_* | VAR_H | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | OP_+ | VAR_( | VAR_mom | OP_* | VAR_alpha | VAR_) | OP_/ | VAR_( | CONST_EPSILON | OP_* | CONST_C | OP_^ | <NUM> | OP_* | VAR_kb | OP_* | CONST_T | VAR_) | OP_* | VAR_M
+mom*(1+chi)*B,mom*(1+chi)*B,VAR_mom | OP_* | VAR_( | <NUM> | OP_+ | VAR_chi | VAR_) | OP_* | VAR_B
+Y*A*x/d,Y*A*x/d,VAR_Y | OP_* | VAR_A | OP_* | VAR_x | OP_/ | VAR_d
+Y/(2*(1+sigma)),Y/(2*(1+sigma)),VAR_Y | OP_/ | VAR_( | <NUM> | OP_* | VAR_( | <NUM> | OP_+ | VAR_sigma | VAR_) | VAR_)
+1/(exp((h/(2*pi))*omega/(kb*T))-1),1/(exp((h/(2*pi))*omega/(kb*T))-1),<NUM> | OP_/ | VAR_( | FUNC_EXP | VAR_( | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_* | VAR_omega | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_) | OP_- | <NUM> | VAR_)
+(h/(2*pi))*omega/(exp((h/(2*pi))*omega/(kb*T))-1),(h/(2*pi))*omega/(exp((h/(2*pi))*omega/(kb*T))-1),VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_* | VAR_omega | OP_/ | VAR_( | FUNC_EXP | VAR_( | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_* | VAR_omega | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_) | OP_- | <NUM> | VAR_)
+2*mom*B/(h/(2*pi)),2*mom*B/(h/(2*pi)),<NUM> | OP_* | VAR_mom | OP_* | VAR_B | OP_/ | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_)
+sin(E_n*t/(h/(2*pi)))**2,sin(E_n*t/(h/(2*pi)))^2,FUNC_SIN | VAR_( | VAR_E_n | OP_* | VAR_t | OP_/ | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | VAR_) | OP_^ | <NUM>
+(p_d*Ef*t/(h/(2*pi)))*sin((omega-omega_0)*t/2)**2/((omega-omega_0)*t/2)**2,(p_d*Ef*t/(h/(2*pi)))*sin((omega-omega_0)*t/2)^2/((omega-omega_0)*t/2)^2,VAR_( | VAR_p_d | OP_* | VAR_Ef | OP_* | VAR_t | OP_/ | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | VAR_) | OP_* | FUNC_SIN | VAR_( | VAR_( | VAR_omega | OP_- | VAR_omega_0 | VAR_) | OP_* | VAR_t | OP_/ | <NUM> | VAR_) | OP_^ | <NUM> | OP_/ | VAR_( | VAR_( | VAR_omega | OP_- | VAR_omega_0 | VAR_) | OP_* | VAR_t | OP_/ | <NUM> | VAR_) | OP_^ | <NUM>
+mom*sqrt(Bx**2+By**2+Bz**2),mom*sqrt(Bx^2+By^2+Bz^2),VAR_mom | OP_* | FUNC_SQRT | VAR_( | VAR_Bx | OP_^ | <NUM> | OP_+ | VAR_By | OP_^ | <NUM> | OP_+ | VAR_Bz | OP_^ | <NUM> | VAR_)
+n*(h/(2*pi)),n*(h/(2*pi)),VAR_n | OP_* | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_)
+2*E_n*d**2*k/(h/(2*pi)),2*E_n*d^2*k/(h/(2*pi)),<NUM> | OP_* | VAR_E_n | OP_* | VAR_d | OP_^ | <NUM> | OP_* | VAR_k | OP_/ | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_)
+I_0*(exp(q*Volt/(kb*T))-1),I_0*(exp(q*Volt/(kb*T))-1),VAR_I_0 | OP_* | VAR_( | FUNC_EXP | VAR_( | CONST_Q | OP_* | VAR_Volt | OP_/ | VAR_( | VAR_kb | OP_* | CONST_T | VAR_) | VAR_) | OP_- | <NUM> | VAR_)
+2*U*(1-cos(k*d)),2*U*(1-cos(k*d)),<NUM> | OP_* | VAR_U | OP_* | VAR_( | <NUM> | OP_- | FUNC_COS | VAR_( | VAR_k | OP_* | VAR_d | VAR_) | VAR_)
+(h/(2*pi))**2/(2*E_n*d**2),(h/(2*pi))^2/(2*E_n*d^2),VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_^ | <NUM> | OP_/ | VAR_( | <NUM> | OP_* | VAR_E_n | OP_* | VAR_d | OP_^ | <NUM> | VAR_)
+2*pi*alpha/(n*d),2*pi*alpha/(n*d),<NUM> | OP_* | CONST_PI | OP_* | VAR_alpha | OP_/ | VAR_( | VAR_n | OP_* | VAR_d | VAR_)
+beta*(1+alpha*cos(theta)),beta*(1+alpha*cos(theta)),VAR_beta | OP_* | VAR_( | <NUM> | OP_+ | VAR_alpha | OP_* | FUNC_COS | VAR_( | VAR_theta | VAR_) | VAR_)
+-m*q**4/(2*(4*pi*epsilon)**2*(h/(2*pi))**2)*(1/n**2),-m*q^4/(2*(4*pi*epsilon)^2*(h/(2*pi))^2)*(1/n^2),OP_- | CONST_M | OP_* | CONST_Q | OP_^ | <NUM> | OP_/ | VAR_( | <NUM> | OP_* | VAR_( | <NUM> | OP_* | CONST_PI | OP_* | CONST_EPSILON | VAR_) | OP_^ | <NUM> | OP_* | VAR_( | CONST_H | OP_/ | VAR_( | <NUM> | OP_* | CONST_PI | VAR_) | VAR_) | OP_^ | <NUM> | VAR_) | OP_* | VAR_( | <NUM> | OP_/ | VAR_n | OP_^ | <NUM> | VAR_)
+-rho_c_0*q*A_vec/m,-rho_c_0*q*A_vec/m,OP_- | VAR_rho_c_0 | OP_* | CONST_Q | OP_* | VAR_A_vec | OP_/ | CONST_M
