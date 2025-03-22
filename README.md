@@ -1,6 +1,7 @@
 # SymbolicRegression-ML4Sci-Krish-Malik
 
 ## Tasks & Results
+Evaluation Metric: Sequence accuracy was used to measure model performance, ensuring that predicted symbolic expressions exactly match the ground truth.
 
 ###  Common Task 1: Preprocessing & Tokenization
 - **Objective:** Prepare and tokenize equations to make them suitable for symbolic regression using machine learning models.
